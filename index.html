@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="background"><img src="assets/images/PRINCIPAL/wallpaper.jpeg" alt="background"></div>
+
+    <header>   
+        <figure class="logo">
+            <img src="assets/images/PRINCIPAL/LOGO.png" alt="logotipo Genshin impact" width="200"/>
+        </figure>
+        <form>
+            <label for="busca" hidden>Buscar</label>
+            <input type="text" placeholder="Buscar" id="busca">
+            
+        </form>
+
+    </header>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <nav class="sidebar">
+            <h2>Menu</h2>
+            <h3>Sobre o jogo</h3>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="elementos.html">Elementos</a></li>
+            </ul>
+
+            <h3>Personagens</h3>
+            <ul>
+                <li><a href="bennett.html">Bennett</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1 id="inicio">Genshin Impact</h1>
+            <p id="descricao">Genshin Impact (em chinês: 原神) é um jogo eletrônico RPG de ação gratuito desenvolvido e publicado pela miHoYo. O jogo apresenta um ambiente de mundo aberto de fantasia e sistema de batalha baseado em ação usando Pontos de energia elemental e troca de personagem, e usa a monetização de jogo gacha para os jogadores obterem novos personagens, armas e outros recursos. O jogo é apenas online e apresenta um modo multiplayer limitado que permite até quatro jogadores jogarem juntos. Foi lançado para Microsoft Windows, PlayStation 4, Android e iOS em 28 de setembro de 2020. O Genshin Impact também está planejado para lançamento no Nintendo Switch e PlayStation 5; a compatibilidade da edição de PlayStation 4 para de PlayStation 5 foi adicionada em 11 de novembro de 2020.</p>
+            <h2 id="historia">História</h2>
+            <p id="descricao">Genshin Impact foi anunciado em junho de 2019, com previsão de lançamento para o primeiro trimestre de 2020, para Windows e iOS. O trailer de lançamento mostrou um estilo de mundo aberto com inspiração no jogo eletrônico The Legend of Zelda: Breath of the Wild, principalmente no estilo de jogabilidade. Houve uma versão beta lançada em junho de 2019.
+            No evento da Sony denominado ChinaJoy 2019, foi anunciado também uma versão para PlayStation 4. Uma versão para Nintendo Switch foi anunciada em 13 de janeiro de 2020 pela imprensa.d
+            Em 6 de agosto de 2020, miHoYo anunciou que o lançamento do jogo para PlayStation 4 seria em outono de 2020. Mais tarde, foi anunciado que o lançamento para o console estava de volta na mesma programação de 28 de setembro.</p>
+            <h2 id="ambientacao">Ambientação</h2>
+            <p id="descricao">Em um mundo chamado Teyvat, algumas pessoas escolhidas receberam uma visão — pedras que dão aos seus portadores a habilidade de controlar um elemento (fogo, água, gelo, vento, terra, eletricidade e plantas) -- dos Arcontes, pessoas tão poderosas quanto Deuses que governam cada parte ou cidade do mundo de Teyvat sobre o nome "Os Sete". Sendo cada Arconte responsável por um elemento (por isso o nome "os sete"). O jogador começa como um viajante de origem desconhecida que está em busca de seu irmão/sua irmã perdido(a). É possível que o jogador escolha se o viajante é homem ou mulher. No decorrer da aventura, o jogador pode controlar uma série de outros personagens encontrados durante a jornada, cada um possui uma personalidade única e uma habilidade especial, ajudando nas missões e facilitando na busca pela verdade sobre esse mundo.</p>
+            <h2 id="jogabilidade">Jogabilidade</h2>
+            <p id="descricao">O jogo se desenvolve em um mundo aberto com diversos tipos de cenários, onde o jogador pode explorá-lo a pé, escalando, nadando ou até mesmo planando de acordo com o contexto. O mapa é repleto de itens e desafios em que o jogador é instigado a explorá-lo no decorrer da história. O jogador pode controlar até 4 personagens simultaneamente. Completando as missões para avançar na história, um total de 64 personagens jogáveis poderão ser desbloqueados atualmente (08/03/2023).
+            É possível controlar mais de um personagem e cada um possui habilidades específicas: uma básica e uma especial. A habilidade básica pode ser usada em qualquer circunstância, exceto no período de cooldown, que ocorre imediatamente após o uso enquanto a habilidade especial consome energia, o que requer um gerenciamento de tal energia.
+            Outro aspecto importante da jogabilidade de Genshin Impact é a habilidade de cozinhar. O jogador tem a possibilidade de colher diversos alimentos durante o gameplay e alguns deles podem ser preparados para a obtenção de novas refeições. Algumas receitas podem regenerar a saúde do personagem, enquanto outras melhoram as habilidades de ataque ou defesa.</p>
+            <div class="ilustracao">
+                <figure>
+                    <img src="assets/images/PRINCIPAL/jogabilidade.png" alt="Imagem do viajante voando com o planador">
+                    <figcaption>O jogador pode explorar livremente um mapa de mundo aberto com ferramentas. Aqui, o Viajante é visto voando com o planador, mas o jogador pode mudar para outros membros do grupo durante a exploração e combate</figcaption>
+                </figure>
+            </div>
+
+            <script>
+                var searchField = document.getElementById ('busca');
+                var descriptionObject = document.getElementById ('descricao');
+                var textToSearch = descriptionObject.innerHTML;
+
+                function realizaBusca(busca) { 
+                    const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'ig');
+                    const ocurrences = textToSearch.match(regex);
+                    descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+                }
+
+                searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+
+            </script>
+
+        </main>
+
+        <nav class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historia">História</a></li>
+                <li><a href="#ambientacao">Ambientação</a></li>
+                <li><a href="#jogabilidade">Jogabilidade</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="background"><img src="assets/images/PRINCIPAL/wallpaper.jpeg" alt="background"></div>
+
+    <header>   
+        <figure class="logo">
+            <img src="assets/images/PRINCIPAL/LOGO.png" alt="logotipo Genshin impact" width="200"/>
+        </figure>
+        <form>
+            <label for="busca" hidden>Buscar</label>
+            <input type="text" placeholder="Buscar" id="busca">
+            
+        </form>
+
+    </header>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <nav class="sidebar">
+            <h2>Menu</h2>
+            <h3>Sobre o jogo</h3>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="elementos.html">Elementos</a></li>
+            </ul>
+
+            <h3>Personagens</h3>
+            <ul>
+                <li><a href="bennett.html">Bennett</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1 id="inicio">Elementos</h1>
+
+            <p>No mundo de Teyvat - onde os sete elementos fluem e convergem - qualquer um pode ser abençoado com poder de um dos Arcontes.</p>
+
+            <h2 id="elementos-e-arcontes">Elementos e arcontes</h2>
+
+            <p>Os Arcontes concedem alguns de seus poderes elementais aos mortais na forma de Visões. As Visões são geralmente cristais esféricos marcados com o símbolo de seu elemento e brilham com a sua cor característica. Visões aparecem misteriosamente para os escolhidos durante momentos de extrema crise, ou desejos e ambições singulares.<br>
+
+                Visões permitem que seus portadores concentrem sua energia mental para utilizarem os poderes elementais do Arconte que os abençoou. Depois de receberem esses poderes, os detentores são chamados de "Alógenes".<br>
+                
+                Quando um Alógene morre, sua Visão perde o seu poder, com o seu brilho desaparecendo e deixando apenas uma gema de vidro. Algumas vezes, essas Visões gastas vão ressoar com uma nova pessoa e se reativarão. Por esse motivo, visões gastas são mercadorias buscadas pelos extremamente ricos.<br>
+                
+                Existem sete poderes elementais em Teyvat, cada qual com sua própria região/cidade que adora seu respectivo Arconte.<br>
+                
+                Simplesmente entrar em contato com os elementos fará com que o personagem, inimigo ou objeto seja afetado por um efeito de status elemental, alguns dos quais causam debuff.</p>
+
+                <table class="tabela-elemento" width="700px" cellspacing="0">
+
+                    <caption>Elementos e reações</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Elemento</th>
+                            <th>Efeito de status</th>
+                            <th width="100px">Fórmula da reação</th>
+                            <th>Descrição da reação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <td rowspan="5" id="pyro">
+                            <figure>
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" alt="Símbolo do elemento pyro">
+                                <figcaption>Pyro</figcaption>
+                            </figure>
+                        </td>
+
+                        <td rowspan="5">
+                            Aplica o status Pyro.<br>
+                            (Causa um pequeno dano por queimadura continuamente, aprox. 3 danos / segundo)
+                        </td>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" class="reacao-elemental" alt="Símbolo do elemento hydro">
+                            </td>
+
+                            <td>Vaporização: Provoca x1.5 de Dano Pyro quando um ataque Pyro ativa a reação.</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Dendro.png" class="reacao-elemental" alt="Símbolo do elemento dendro">
+                            </td>
+
+                            <td>Queimadura: Causa um grande Dano Pyro continuamente. A grama é considerada um objeto Dendro e vai espalhar o efeito pela área.</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" class="reacao-elemental" alt="Símbolo do elemento electro">
+                            </td>
+
+                            <td>Sobrecarga: Provoca Dano Pyro em AdE e causa uma explosão, que é considerada um Ataque Pesado</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Cryo.png" class="reacao-elemental" alt="Símbolo do elemento cryo">
+                            </td>
+
+                            <td>Fusão: Provoca Dano Pyro x2 quando um ataque Pyro ativa a reação.</td>
+                        </tr>
+
+                        <td rowspan="4" id="hydro">
+                            <figure>
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" alt="Símbolo do elemento hydro">
+                                <figcaption>Hydro</figcaption>
+                            </figure>
+                        </td>
+
+                        <td rowspan="4">
+                            Aplica o status Molhado.<br>
+                            (Faz com que personagens fiquem vulneráveis à reação de Eletricamente Carregado de inimigos próximos)
+                        </td>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" class="reacao-elemental" alt="Símbolo do elemento hydro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro">
+                            </td>
+
+                            <td>Vaporização: Causa Dano Hydro x2 quando um ataque Hydro ativa uma reação.</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" class="reacao-elemental" alt="Símbolo do elemento hydro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" class="reacao-elemental" alt="Símbolo do elemento electro">
+                            </td>
+
+                            <td>Eletricamente Carregado: Causa Dano Electro continuamente até que o efeito perca sua duração, Seres Eletricamente Carregados emitem eletricidade sem parar e interrompe as ações dos afetados. Também geram relâmpagos que vão em direção a outros Seres Molhados, causando dano elétrico</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" class="reacao-elemental" alt="Símbolo do elemento hydro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Cryo.png" class="reacao-elemental" alt="Símbolo do elemento cryo">
+                            </td>
+
+                            <td>Congelado: Congela o alvo. Se o alvo é acertado por um Espadão, um Ataque Imersivo de Espada, ou Dano Geo (com exceção dos ataques imersivos de usuários de Catalisador), vai estilhaçar o gelo, gerando Dano Físico adicional.</td>
+                        </tr>
+
+                        <td rowspan="4" id="dendro">
+                            <figure>
+                                <img src="assets/images/PRINCIPAL/Element_Dendro.png" alt="Símbolo do elemento dendro">
+                                <figcaption>Dendro</figcaption>
+                            </figure>
+                        </td>
+
+                        <td rowspan="4">
+                            Aplica o status Dendro.<br>
+                        </td>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Dendro.png" class="reacao-elemental" alt="Símbolo do elemento dendro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro">
+                            </td>
+
+                            <td>Queimadura: Causa um grande Dano Pyro continuamente. A grama é considerada um objeto Dendro e vai espalhar o efeito</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" class="reacao-elemental" alt="Símbolo do elemento hydro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Dendro.png" class="reacao-elemental" alt="Símbolo do elemento dendro">
+                            </td>
+
+                            <td>Florescimento: gera Núcleos Dendro, que podem explodir causando dano Dendro em uma AdE, se o Núcleo Dendro entra em contato com Pyro ativa Germinação, causando um grande dano em AdE, se entrar em contato com Electro ativa SuperFlorescimento convertendo o Núcleo Dendro me projéteis enraizadores teleguiados.</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" class="reacao-elemental" alt="Símbolo do elemento electro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Dendro.png" class="reacao-elemental" alt="Símbolo do elemento dendro">
+                            </td>
+
+                            <td>Aceleração: faz com que as criaturas entrem em Estado de Aceleração, criaturas nesse estado, ao sofrerem ataque Electro ou Dendro, desencadearão reações de "Intensificação" ou "Propagação" respectivamente, sofrendo Dano Adicional.</td>
+                        </tr>
+
+                        <td rowspan="4" id="electro">
+                            <figure>
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" alt="Símbolo do elemento electro">
+                                <figcaption>Electro</figcaption>
+                            </figure>
+                        </td>
+
+                        <td rowspan="4">
+                            Aplica o status Electro.<br>
+                            (Causa o movimento e o ataque do personagem parar momentaneamente)
+                        </td>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" class="reacao-elemental" alt="Símbolo do elemento electro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro">
+                            </td>
+
+                            <td>Sobrecarga: Provoca Dano Pyro em AdE e causa uma explosão, que é considerada um Ataque Pesado</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" class="reacao-elemental" alt="Símbolo do elemento electro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" class="reacao-elemental" alt="Símbolo do elemento hydro">
+                            </td>
+
+                            <td>Eletricamente Carregado: Causa Dano Electro continuamente até que o efeito perca sua duração, Seres Eletricamente Carregados emitem eletricidade sem parar e interrompe as ações dos afetados. Também geram relâmpagos que vão em direção a outros Seres Molhados, causando dano elétrico</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" class="reacao-elemental" alt="Símbolo do elemento electro">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Cryo.png" class="reacao-elemental" alt="Símbolo do elemento cryo">
+                            </td>
+
+                            <td>Supercondutor: Causa Dano Cryo em uma AdE e reduz a Resistência Física do alvo em -40% por 12 segundos. Cada reacão de Supercondutor causa Dano aos alvo dentro do seu alcance um vez, o que significa que se 3 Reações de Supercondutor são causadas, cada alvo irá ser afetado 3 vezes.</td>
+                        </tr>
+
+                        <tr id="anemo">
+                            <td>
+                                <figure>
+                                    <img src="assets/images/PRINCIPAL/Element_Anemo.png" alt="Símbolo do elemento anemo">
+                                    <figcaption>Anemo</figcaption>
+                                </figure>
+                            </td>
+
+                            <td>
+                                Nenhum.<br>
+                            </td>
+                        
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Anemo.png" class="reacao-elemental" alt="Símbolo do elemento anemo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro"><br>
+
+                                <img src="assets/images/PRINCIPAL/Element_Anemo.png" class="reacao-elemental" alt="Símbolo do elemento anemo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" class="reacao-elemental" alt="Símbolo do elemento hydro"><br>
+
+                                <img src="assets/images/PRINCIPAL/Element_Anemo.png" class="reacao-elemental" alt="Símbolo do elemento anemo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" class="reacao-elemental" alt="Símbolo do elemento electro"><br>
+
+                                <img src="assets/images/PRINCIPAL/Element_Anemo.png" class="reacao-elemental" alt="Símbolo do elemento anemo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Cryo.png" class="reacao-elemental" alt="Símbolo do elemento cryo">
+
+                            </td>
+
+                            <td>Redemoinho: Combina com um elemento e causa dano elemental enquanto espalhao efeito do elemento a inimigos próximos. Não causa dano Anemo. Apenas um elemento pode ser combinado com Anemo por vez.</td>
+                        </tr>
+
+                        <td rowspan="4" id="cryo">
+                            <figure>
+                                <img src="assets/images/PRINCIPAL/Element_Cryo.png" alt="Símbolo do elemento cryo">
+                                <figcaption>Cryo</figcaption>
+                            </figure>
+                        </td>
+
+                        <td rowspan="4">
+                            Aplica o status Cryo.<br>
+                            (Reduz a Velocidade de Movimento e a Velocidade de Ataque)
+                        </td>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Cryo.png" class="reacao-elemental" alt="Símbolo do elemento cryo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro">
+                            </td>
+
+                            <td>Fusão: Causa Dano Cryo x1.5 quando um ataque Cryo ativa a reação.</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Cryo.png" class="reacao-elemental" alt="Símbolo do elemento cryo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" class="reacao-elemental" alt="Símbolo do elemento hydro">
+                            </td>
+
+                            <td>Congelado: Congela o alvo. Se o alvo é acertado por um Espadão, um Ataque Imersivo de Espada, ou Dano Geo (com exceção dos ataques imersivos de usuários de Catalisador), vai estilhaçar o gelo, gerando Dano Físico adicional.</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Cryo.png" class="reacao-elemental" alt="Símbolo do elemento cryo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" class="reacao-elemental" alt="Símbolo do elemento electro">
+                            </td>
+
+                            <td>Supercondutor: Causa Dano Cryo em uma AdE e reduz a Resistência Física do alvo em -40% por 12 segundos. Cada reacão de Supercondutor causa Dano aos alvo dentro do seu alcance um vez, o que significa que se 3 Reações de Supercondutor são causadas, cada alvo irá ser afetado 3 vezes.</td>
+                        </tr>
+
+                        <tr id="geo">
+                            <td>
+                                <figure>
+                                    <img src="assets/images/PRINCIPAL/Element_Geo.png" alt="Símbolo do elemento geo">
+                                    <figcaption>Geo</figcaption>
+                                </figure>
+                            </td>
+
+                            <td>
+                                Nenhum.<br>
+                            </td>
+                        
+                            <td>
+                                <img src="assets/images/PRINCIPAL/Element_Geo.png" class="reacao-elemental" alt="Símbolo do elemento geo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Pyro.png" class="reacao-elemental" alt="Símbolo do elemento pyro"><br>
+
+                                <img src="assets/images/PRINCIPAL/Element_Geo.png" class="reacao-elemental" alt="Símbolo do elemento geo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Hydro.png" class="reacao-elemental" alt="Símbolo do elemento hydro"><br>
+
+                                <img src="assets/images/PRINCIPAL/Element_Geo.png" class="reacao-elemental" alt="Símbolo do elemento geo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Electro.png" class="reacao-elemental" alt="Símbolo do elemento electro"><br>
+
+                                <img src="assets/images/PRINCIPAL/Element_Geo.png" class="reacao-elemental" alt="Símbolo do elemento geo">
+                                +
+                                <img src="assets/images/PRINCIPAL/Element_Cryo.png" class="reacao-elemental" alt="Símbolo do elemento cryo">
+
+                            </td>
+
+                            <td>Cristalizar: Absorve o elemento e gera um cristal do mesmo elemento esse cristal dará um escudo elemental, que absorverá todos os tipos de dano, mas será mais eficiente contra o elemento do escudo.</td>
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            <script>
+                var searchField = document.getElementById ('busca');
+                var descriptionObject = document.getElementById ('descricao');
+                var textToSearch = descriptionObject.innerHTML;
+
+                function realizaBusca(busca) { 
+                    const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'ig');
+                    const ocurrences = textToSearch.match(regex);
+                    descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+                }
+
+                searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+
+            </script>
+
+        </main>
+
+        <nav class="anchors">
+            <h2>Neste Artigo</h2>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#elementos-e-arcontes">Elementos e Arcontes</a></li>
+                <li><a href="#pyro">Pyro</a></li>
+                <li><a href="#hydro">Hydro</a></li>
+                <li><a href="#dendro">Dendro</a></li>
+                <li><a href="#electro">Electro</a></li>
+                <li><a href="#anemo">Anemo</a></li>
+                <li><a href="#cryo">Cryo</a></li>
+                <li><a href="#geo">Geo</a></li>
+
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="footer">
+
+    </div>
+</body>
+</html>
